@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(247, 250, 250);
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    height: 100vh;
+    background-color: rgb(92, 95, 96);
+}
+.name, mailPh,genBran{
+    margin: 10px;
+}
+
+input{
+    height: 2rem;
+    background-color: rgb(240, 253, 253);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+button{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 2rem;
+    background-color: rgb(75, 134, 235);
+    border: none;
+    font-size: 1rem;
+    border-radius: 10px;
+    
+}
+form{
+    background-color: rgb(201, 222, 199);
+    padding: 4rem;
+    border-radius: 10px;
+}
+h1{
+    text-align: center;
+}
+.genBran{
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.mailPh{
+    display: flex;
+    justify-content: space-between;
+}

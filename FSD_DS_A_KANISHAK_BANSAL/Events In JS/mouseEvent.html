@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events</title>
+    <style>
+        #box{
+            height: 300px;
+            width: 300px;
+            background-color: rgb(170, 255, 0);
+            margin: 200px 0 0 100px;
+            border: 5px solid rgb(85, 85, 235);
+        }
+    </style>
+</head>
+<body>
+    <div id="box" ondblclick="evenCall()" onclick="events()" oncontextmenu="evenCall()" >This is section A
+        <!-- onmouseup,down -->
+    </div>
+    <button onclick="clk()">Change </button>
+</body>
+    <script>
+        let st = document.querySelector('body');
+        function clk(){
+            st.style.background = "blue";
+        }
+        function evenCall(){
+            alert("These are the mouse events");
+        }
+        function events(){
+            alert('These are second mouse event')
+        }
+    </script>
+</html>
